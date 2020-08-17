@@ -23,6 +23,7 @@ PANDAS_MIN_VERSION="1.0"
 MATPLOTLIB_MIN_VERSION="3.1"
 PLOTLY_MIN_VERSION="4.9"
 SEABORN_MIN_VERSION="0.10"
+FP_PROPHET_VERSION=""
 
 import os, sys, re
 
@@ -60,7 +61,8 @@ def setup_package():
                         'pandas>={}'.format(PANDAS_MIN_VERSION),
                         'matplotlib>={}'.format(MATPLOTLIB_MIN_VERSION),
                         'plotly>={}'.format(PLOTLY_MIN_VERSION),
-                        'seaborn>={}'.format(SEABORN_MIN_VERSION)
+                        'seaborn>={}'.format(SEABORN_MIN_VERSION),                        
+                        'fbprophet>={}'.format(FP_PROPHET_VERSION)
                         ],
 		            )
     metadata['packages'] = find_packages()
